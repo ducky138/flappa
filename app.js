@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// THIS IS WHERE YOU REGISTER YOUR MODELS
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/news');
 require('./models/Posts');
